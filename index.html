@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduce un texto</title>
+  </head>
+  <body>
+    <h1>Introduce un texto:</h1>
+    <input type="text" id="texto">
+    <button onclick="mostrarTexto()">Mostrar texto</button>
+    <p id="mostrar"></p>
+    <script>
+      function mostrarTexto() {
+        var texto = document.getElementById("texto").value;
+        document.getElementById("mostrar").innerHTML = "El texto introducido es: " + texto;
+      }
+    </script>
+  </body>
+</html>
